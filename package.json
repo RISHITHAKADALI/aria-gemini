@@ -19,7 +19,7 @@
     "server": "node server.js",
     "client": "react-scripts start"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://aria-gemini-production.up.railway.app",
   "browserslist": {
     "production": [
       ">0.2%",
