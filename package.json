@@ -17,8 +17,9 @@
     "start": "concurrently \"node server.js\" \"cross-env PORT=3000 react-scripts start\"",
     "build": "react-scripts build",
     "server": "node server.js",
-    "client": "react-scripts start"
-  },
+    "client": "react-scripts start",
+    "railway": "node server.js"
+},
   "proxy": "https://aria-gemini-production.up.railway.app",
   "browserslist": {
     "production": [
