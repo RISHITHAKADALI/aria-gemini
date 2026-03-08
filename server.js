@@ -4,11 +4,12 @@ const fetch = require("node-fetch");
 require("dotenv").config();
 
 const app = express();
+app.use(cors());
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.json({ status: "ARIA server is running!" });
 });
-app.use(cors());
-app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
   try {
