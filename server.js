@@ -54,8 +54,8 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`✦ ARIA server running on http://localhost:${PORT}`);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`✦ ARIA server running on port ${PORT}`);
   console.log(`🔑 API Key loaded: ${process.env.GROQ_API_KEY ? process.env.GROQ_API_KEY.slice(0,8) + "..." : "NOT FOUND"}`);
 });
