@@ -484,7 +484,7 @@ export default function App() {
     setLoading(true);
     try {
       const history = messages.map(m => ({ role: m.role, content: m.text }));
-      const res = await fetch("https://aria-gemini-production.up.railway.app/api/chat", {
+     const res = await fetch("https://aria-gemini-production.up.railway.app/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ history, message: userText, systemPrompt: SYSTEM_PROMPT }),
